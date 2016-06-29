@@ -1,6 +1,6 @@
 // base
-	$base:     8px;
-	$css-path: ".";
+	$base:     8px !default;
+	$css-path: "." !default;
 
 // colour
 	@import "colours";
