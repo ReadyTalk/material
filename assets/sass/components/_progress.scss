@@ -17,20 +17,6 @@
 	transition: width 0.3s $timing;
 }
 
-// colour
-	@each $color in $palette-list-class {
-		$i: index($palette-list-class, $color);
-
-		@if $color != "brand-accent" {
-			.progress-#{$color} {
-				background-color: nth($palette-list-light, $i);
-				.progress-bar {
-					background-color: nth($palette-list-color, $i);
-				}
-			}
-		}
-	}
-
 .progress-bar-indeterminate {
 	background-color: $brand-color-accent;
 	&:after,
@@ -60,6 +46,20 @@
 			right: 0;
 	}
 }
+
+// colour
+	@each $color in $palette-list-class {
+		$i: index($palette-list-class, $color);
+
+		@if $color != "brand-accent" {
+			.progress-#{$color} {
+				background-color: nth($palette-list-light, $i);
+				.progress-bar, .progress-bar-indeterminate {
+					background-color: nth($palette-list-dark, $i);
+				}
+			}
+		}
+	}
 
 // animation
 	@keyframes pbar-indeterminate-one {
