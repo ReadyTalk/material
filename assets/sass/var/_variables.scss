@@ -8,71 +8,71 @@
 // font
 	@import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic);
 
-	$font-fam:           Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	$font-fam-mono:      Monaco, Menlo, Consolas, "Courier New", monospace;
-	$font-fam-serif:     Georgia, serif;
+	$font-fam:           Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+	$font-fam-mono:      Monaco, Menlo, Consolas, "Courier New", monospace !default;
+	$font-fam-serif:     Georgia, serif !default;
 
-	$font-weight-medium: 500;
-	$font-weight-normal: 400;
-	$font-weight-light:  300;
+	$font-weight-medium: 500 !default;
+	$font-weight-normal: 400 !default;
+	$font-weight-light:  300 !default;
 
 	// font size
-		$font-size:             ($base * 1.75); // 14px
-		$font-size-h1:          ($base * 5.5);  // 44px
-		$font-size-h2:          ($base * 4.25); // 34px
-		$font-size-h3:          ($base * 3);    // 24px
-		$font-size-h4:          ($base * 2.5);  // 20px
-		$font-size-h5:          ($base * 2);    // 16px
-		$font-size-h6:          ($base * 1.5);  // 12px
+		$font-size:             ($base * 1.75) !default; // 14px
+		$font-size-h1:          ($base * 5.5) !default;  // 44px
+		$font-size-h2:          ($base * 4.25) !default; // 34px
+		$font-size-h3:          ($base * 3) !default;    // 24px
+		$font-size-h4:          ($base * 2.5) !default;  // 20px
+		$font-size-h5:          ($base * 2) !default;    // 16px
+		$font-size-h6:          ($base * 1.5) !default;  // 12px
 
-		$font-size-display-4:   ($base * 14);   // 112px
-		$font-size-display-3:   ($base * 7);    // 56px
+		$font-size-display-4:   ($base * 14) !default;   // 112px
+		$font-size-display-3:   ($base * 7) !default;    // 56px
 
 	// line height
-		$line-height:           ($base * 2.5);  // 20px
-		$line-height-h1:        ($base * 6);    // 48px
-		$line-height-h2:        ($base * 5);    // 40px
-		$line-height-h3:        ($base * 4);    // 32px
-		$line-height-h4:        ($base * 3.5);  // 28px
-		$line-height-h5:        ($base * 3);    // 24px
-		$line-height-h6:        ($base * 2.5);  // 20px
+		$line-height:           ($base * 2.5) !default;  // 20px
+		$line-height-h1:        ($base * 6) !default;    // 48px
+		$line-height-h2:        ($base * 5) !default;    // 40px
+		$line-height-h3:        ($base * 4) !default;    // 32px
+		$line-height-h4:        ($base * 3.5) !default;  // 28px
+		$line-height-h5:        ($base * 3) !default;    // 24px
+		$line-height-h6:        ($base * 2.5) !default;  // 20px
 
-		$line-height-display-4: 1.1;            // missing in google material design guideline
-		$line-height-display-3: 1.1;            // missing in google material design guideline
+		$line-height-display-4: 1.1 !default;            // missing in google material design guideline
+		$line-height-display-3: 1.1 !default;            // missing in google material design guideline
 
 	// margin
-		$margin-base:           ($base * 1);    // 8px
-		$margin-lg:             ($base * 6);    // 48px
-		$margin-md:             ($base * 3);    // 24px
-		$margin-sm:             ($base * 1.5);  // 12px
+		$margin-base:           ($base * 1) !default;    // 8px
+		$margin-lg:             ($base * 6) !default;    // 48px
+		$margin-md:             ($base * 3) !default;    // 24px
+		$margin-sm:             ($base * 1.5) !default;  // 12px
 
 	// other
-		$avatar-height:         ($base * 5);    // 40px
-		$btn-height:            ($base * 4.5);  // 36px
-		$header-height:         ($base * 7);    // 56px
-		$nav-height:            ($base * 6);    // 48px
+		$avatar-height:         ($base * 5) !default;    // 40px
+		$btn-height:            ($base * 4.5) !default;  // 36px
+		$header-height:         ($base * 7) !default;    // 56px
+		$nav-height:            ($base * 6) !default;    // 48px
 
-		$cell-height:           $nav-height;    // 48px
-		$fbtn-height:           $avatar-height; // 40px
-		$input-height:          $btn-height;    // 36px
-		$pcircular-height:      $avatar-height; // 40px
-		$tile-height:           $nav-height;    // 48px
+		$cell-height:           $nav-height !default;    // 48px
+		$fbtn-height:           $avatar-height !default; // 40px
+		$input-height:          $btn-height !default;    // 36px
+		$pcircular-height:      $avatar-height !default; // 40px
+		$tile-height:           $nav-height !default;    // 48px
 
 // grid
-	$grid-cols:   12;
-	$grid-gutter: ($base * 2);
+	$grid-cols:   12 !default;
+	$grid-gutter: ($base * 2) !default;
 
 // responsive
-	$screen-lg: 1440px;
-	$screen-md: 992px;
-	$screen-sm: 768px;
-	$screen-xs: 480px;
+	$screen-lg: 1440px !default;
+	$screen-md: 992px !default;
+	$screen-sm: 768px !default;
+	$screen-xs: 480px !default;
 
 // timing
-	$timing: cubic-bezier(0.4, 0, 0.2, 1);
+	$timing: cubic-bezier(0.4, 0, 0.2, 1) !default;
 
 // z-index
-	$bottom-base:  10;
-	$content-base: 20;
-	$header-base:  30;
-	$top-base:     40;
+	$bottom-base:  10 !default;
+	$content-base: 20 !default;
+	$header-base:  30 !default;
+	$top-base:     40 !default;
