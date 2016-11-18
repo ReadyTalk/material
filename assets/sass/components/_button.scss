@@ -70,7 +70,7 @@
 
 		.btn-#{$color} {
 			background-color: nth($palette-list-color, $i);
-			color: nth($palette-list-text, $i) !important;
+			color: nth($palette-list-text, $i);
 		}
 	}
 

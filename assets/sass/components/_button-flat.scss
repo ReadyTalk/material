@@ -17,6 +17,6 @@
 		$i: index($palette-list-class, $color);
 
 		.btn-flat.btn-#{$color} {
-			color: nth($palette-list-color, $i) !important;
+			color: nth($palette-list-color, $i);
 		}
 	}
